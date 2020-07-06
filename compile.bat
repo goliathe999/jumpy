@@ -1,13 +1,13 @@
 @echo off
 echo gfx
-deltree ./bank1/*.*
+del "C:\Users\mkoch\Desktop\SMS\C\projet\bank1\*.*?"
 .\bmp2tile\bmp2tile.exe .\gfx\titre.png -removedupes -mirror -savetiles .\bank1\titrebg.psgcompr -palsms -savepalette .\bank1\titrepalette.bin -savetilemap  .\bank1\titremap.bin -exit
 .\bmp2tile\bmp2tile.exe .\gfx\SegaMasterSystemTitleScreen.png -mirror -removedupes -savetiles .\bank1\backgroundtiles.psgcompr -palsms -savepalette .\bank1\backgroundpalette.bin -savetilemap  .\bank1\backgroundtilemap.bin -exit
 .\bmp2tile\bmp2tile.exe .\gfx\spyvsspyspritesheet.png -nomirror -noremovedupes -savetiles .\bank1\spritetiles.psgcompr -palsms -savepalette .\bank1\spritepalette.bin -exit
 .\bmp2tile\bmp2tile.exe .\gfx\font.png -removedupes -mirror -savetiles .\bank1\font.psgcompr -palsms -savepalette .\bank1\fontpalette.bin -savetilemap  .\bank1\fontmap.bin -exit
 #.\bmp2tile\bmp2tile.exe .\gfx\font.png -nomirror -noremovedupes -savetiles .\bank1\font.psgcompr -palsms -savepalette .\bank1\fontpalette.bin -exit
 
-.\bmp2tile\bmp2tile.exe .\gfx\spyvsspysprite2.png -mirror -removedupes -savetiles .\bank1\spritetiles2.psgcompr -palsms -savepalette .\bank1\spritepalette2.bin -exit
+#.\bmp2tile\bmp2tile.exe .\gfx\spyvsspysprite2.png -mirror -removedupes -savetiles .\bank1\spritetiles2.psgcompr -palsms -savepalette .\bank1\spritepalette2.bin -exit
 
 echo folder2c
 folder2c bank1 bank1

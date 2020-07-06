@@ -8,28 +8,22 @@ extern const unsigned char	backgroundtiles_psgcompr[];
 #define				backgroundtiles_psgcompr_size 531
 
 extern const unsigned char	font_psgcompr[];
-#define				font_psgcompr_size 590
+#define				font_psgcompr_size 468
 
 extern const unsigned char	fontmap_bin[];
 #define				fontmap_bin_size 128
 
 extern const unsigned char	fontpalette_bin[];
-#define				fontpalette_bin_size 7
+#define				fontpalette_bin_size 2
 
 extern const unsigned char	spritepalette_bin[];
-#define				spritepalette_bin_size 6
-
-extern const unsigned char	spritepalette2_bin[];
-#define				spritepalette2_bin_size 5
+#define				spritepalette_bin_size 7
 
 extern const unsigned char	spritetiles_psgcompr[];
-#define				spritetiles_psgcompr_size 568
-
-extern const unsigned char	spritetiles2_psgcompr[];
-#define				spritetiles2_psgcompr_size 72
+#define				spritetiles_psgcompr_size 825
 
 extern const unsigned char	titrebg_psgcompr[];
-#define				titrebg_psgcompr_size 1853
+#define				titrebg_psgcompr_size 1529
 
 extern const unsigned char	titremap_bin[];
 #define				titremap_bin_size 1536
