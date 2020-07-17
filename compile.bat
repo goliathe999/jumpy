@@ -1,4 +1,6 @@
 @echo off
+
+
 echo gfx
 del "C:\Users\mkoch\Desktop\SMS\C\projet\bank1\*.*?"
 .\bmp2tile\bmp2tile.exe .\gfx\titre.png -removedupes -mirror -savetiles .\bank1\titrebg.psgcompr -palsms -savepalette .\bank1\titrepalette.bin -savetilemap  .\bank1\titremap.bin -exit
@@ -9,6 +11,13 @@ del "C:\Users\mkoch\Desktop\SMS\C\projet\bank1\*.*?"
 
 #.\bmp2tile\bmp2tile.exe .\gfx\spyvsspysprite2.png -mirror -removedupes -savetiles .\bank1\spritetiles2.psgcompr -palsms -savepalette .\bank1\spritepalette2.bin -exit
 
+echo zik
+vgm2psg.exe  .\sound\zik.vgm .\zik.psg
+psgcomp.exe .\zik.psg .\bank1\zikcomp.psg
+
+vgm2psg.exe  .\sound\jp.vgm .\jp.psg
+psgcomp.exe .\jp.psg .\bank1\jpcomp.psg
+
 echo folder2c
 folder2c bank1 bank1
 echo copy
@@ -17,7 +26,7 @@ copy .\bank1.h .\source\header\bank1.h
 echo sdcc -c -mz80
 sdcc -c -mz80 --peep-file peep-rules.txt source/main.c
 sdcc -c -mz80 --peep-file peep-rules.txt source/bank1.c
-sdcc -o sms.ihx -mz80 --no-std-crt0 --data-loc 0xC000 rel/crt0_sms.rel main.rel bank1.rel SMSlib.lib
+sdcc -o sms.ihx -mz80 --no-std-crt0 --data-loc 0xC000 rel/crt0_sms.rel main.rel bank1.rel SMSlib.lib rel/PSGLib.rel
 echo ihx2sms
 ihx2sms sms.ihx out/sms.sms
 
@@ -30,3 +39,4 @@ del *.lst
 del *.asm
 del *.map
 del *.rel
+del *.psg
