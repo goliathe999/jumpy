@@ -15,7 +15,7 @@ echo zik
 vgm2psg.exe  .\sound\zik.vgm .\zik.psg
 psgcomp.exe .\zik.psg .\bank1\zikcomp.psg
 
-vgm2psg.exe  .\sound\jp.vgm .\jp.psg
+vgm2psg.exe  .\sound\jp.vgm .\jp.psg 
 psgcomp.exe .\jp.psg .\bank1\jpcomp.psg
 
 echo folder2c
